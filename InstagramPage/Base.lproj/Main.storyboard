@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eUw-6Y-7Fu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="InstagramPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="viewcontroller">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gCe-Ky-epF">
+                                <rect key="frame" x="4" y="107" width="385" height="659"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRh-xb-4p6">
+                                <rect key="frame" x="0.0" y="770" width="393" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="9of-33-rUP"/>
+                                </constraints>
+                                <items>
+                                    <tabBarItem image="house.fill" catalog="system" id="FUK-LL-4wP"/>
+                                    <tabBarItem title="" image="magnifyingglass" catalog="system" id="Bgi-2D-Goy"/>
+                                    <tabBarItem title="" image="plus.app" catalog="system" id="PxD-Dc-rS6"/>
+                                    <tabBarItem title="" image="play.square.fill" catalog="system" id="10I-ue-23C"/>
+                                    <tabBarItem image="person.circle" catalog="system" id="D7B-Kb-JfK"/>
+                                </items>
+                                <color key="selectedImageTintColor" systemColor="labelColor"/>
+                            </tabBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gCe-Ky-epF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="Cz2-S9-tTT"/>
+                            <constraint firstItem="sRh-xb-4p6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J6b-un-sCj"/>
+                            <constraint firstItem="sRh-xb-4p6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UoA-Cj-6ko"/>
+                            <constraint firstItem="gCe-Ky-epF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="X9W-zz-oTm"/>
+                            <constraint firstItem="sRh-xb-4p6" firstAttribute="top" secondItem="gCe-Ky-epF" secondAttribute="bottom" constant="4" id="Xla-ai-qCd"/>
+                            <constraint firstItem="sRh-xb-4p6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="daO-TO-l86"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gCe-Ky-epF" secondAttribute="trailing" constant="4" id="kWj-5A-qOb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8QD-Gh-bgQ">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="k33-c6-Xe7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="16h-Ij-YQY">
+                                <rect key="frame" x="16" y="0.0" width="159" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="trailing" title="Instagram">
+                                    <imageReference key="image" image="chevron.down" catalog="system" symbolScale="small"/>
+                                    <fontDescription key="titleFontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="30"/>
+                                </buttonConfiguration>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="l6t-bQ-aiK">
+                            <view key="customView" contentMode="scaleToFill" id="6f9-Rd-ADX">
+                                <rect key="frame" x="281" y="10" width="96" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tP5-wQ-0A3">
+                                        <rect key="frame" x="64" y="0.0" width="32" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="ji4-hw-zlZ"/>
+                                            <constraint firstAttribute="height" constant="24" id="ynu-4x-H4H"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <imageReference key="image" image="paperplane" catalog="system"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sharePressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5u2-T7-nUv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ls-4N-FlQ">
+                                        <rect key="frame" x="32" y="0.0" width="32" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="9ZN-MX-atp"/>
+                                            <constraint firstAttribute="height" constant="24" id="p2a-Za-KZp"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system"/>
+                                        <connections>
+                                            <action selector="likePressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEC-L9-7VM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eD-Fm-Vjj">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="6OZ-pp-q5Q"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="dab-4c-h8o"/>
+                                        </constraints>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="plus.app" catalog="system"/>
+                                        <connections>
+                                            <action selector="addPressButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9aj-n2-VZ8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8eD-Fm-Vjj" firstAttribute="top" secondItem="6f9-Rd-ADX" secondAttribute="top" id="4O1-SO-C2Z"/>
+                                    <constraint firstItem="8eD-Fm-Vjj" firstAttribute="leading" secondItem="6f9-Rd-ADX" secondAttribute="leading" id="BGr-jS-Y6u"/>
+                                    <constraint firstAttribute="trailing" secondItem="tP5-wQ-0A3" secondAttribute="trailing" id="Pi0-uQ-mpf"/>
+                                    <constraint firstAttribute="bottom" secondItem="8eD-Fm-Vjj" secondAttribute="bottom" id="bhs-0C-jmP"/>
+                                    <constraint firstItem="tP5-wQ-0A3" firstAttribute="leading" secondItem="5Ls-4N-FlQ" secondAttribute="trailing" id="lyh-eH-bi5"/>
+                                    <constraint firstItem="tP5-wQ-0A3" firstAttribute="top" secondItem="6f9-Rd-ADX" secondAttribute="top" id="nEF-XG-X7I"/>
+                                    <constraint firstAttribute="bottom" secondItem="tP5-wQ-0A3" secondAttribute="bottom" id="s1H-EQ-yMR"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Ls-4N-FlQ" secondAttribute="bottom" id="tPW-tT-FS2"/>
+                                    <constraint firstItem="5Ls-4N-FlQ" firstAttribute="leading" secondItem="8eD-Fm-Vjj" secondAttribute="trailing" id="xxS-YJ-jw9"/>
+                                    <constraint firstItem="5Ls-4N-FlQ" firstAttribute="top" secondItem="6f9-Rd-ADX" secondAttribute="top" id="zDI-SI-e8Q"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="8eD-Fm-Vjj" id="Dbr-bh-csf"/>
+                        <outlet property="instaButton" destination="16h-Ij-YQY" id="ODH-05-mLN"/>
+                        <outlet property="likeButton" destination="5Ls-4N-FlQ" id="HIv-BW-qw4"/>
+                        <outlet property="shareButton" destination="tP5-wQ-0A3" id="DlD-yU-Tjy"/>
+                        <outlet property="tabBar" destination="sRh-xb-4p6" id="0YV-We-gw0"/>
+                        <outlet property="tableView" destination="gCe-Ky-epF" id="8nj-Vo-vJU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.7557251908396" y="-35.211267605633807"/>
+        </scene>
+        <!--Next View Controller-->
+        <scene sceneID="u5M-x6-RuB">
+            <objects>
+                <viewController storyboardIdentifier="NextViewController" id="eyF-z1-fCp" customClass="NextViewController" customModule="InstagramPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8kM-fo-xps">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wn8-iq-ub5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQU-0c-Qml" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1844" y="-35"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GOA-ag-dSg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eUw-6Y-7Fu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mcK-v9-Ddg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="582-Y7-mSJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBg-xN-OA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54.198473282442748" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="paperplane" catalog="system" width="128" height="119"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="play.square.fill" catalog="system" width="128" height="114"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
